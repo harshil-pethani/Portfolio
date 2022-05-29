@@ -9,7 +9,8 @@ const Works = () => {
             slogan: "Shop Your Favourite Fashion Products",
             domains: ["React JS", "Node JS", "Mongo DB", "Express JS", "SASS"],
             desc: ["Here User can view top Fashion Products available on LuxuryHub and Buy it. ", "After Login User can add Products into the Cart and place Order.", "User can View its Profile and can Update it.", "There is a Cookie used for Session Tracking so that every time user do not need to signin.", "After Placing Order Successfully User can Track its Order, checks Order Status, Update Order details like address and Cancel Order also."],
-            url: "https://luxuryhub.herokuapp.com/"
+            url: "https://luxuryhub.herokuapp.com/",
+            git: "https://github.com/mrpethani/LuxuryHub"
         },
         {
             id: "2",
@@ -17,7 +18,8 @@ const Works = () => {
             slogan: "Keep Updated with Crypto Currency",
             domains: ["React JS", "Node JS", "Mongo DB", "Express JS", "SASS"],
             desc: ["Here User can view top 100 currencies their market cap, price and change in price", "User can view the Latest news about Crypto Currencies", "User can Check Detailed Information about any coin like Current Price, Market Cap, Coin History, 24 Hour Highest and Lowest Price etc.", "User can see the Graphical Representation of last 24 Hour, 1 Week, 1 Month and 1 Year Price changes of perticuler coin", "After Login User can add their Favourite Crypto Currencies to favourite List"],
-            url: "https://cryptowal.herokuapp.com/"
+            url: "https://cryptowal.herokuapp.com/",
+            git: "https://github.com/mrpethani/CryptoWall"
         },
         {
             id: "3",
@@ -25,7 +27,8 @@ const Works = () => {
             slogan: "Search City & Get Weather Info",
             domains: ["HTML", "CSS", "JavaScript", "BootStrap"],
             desc: ["It is a simple web-app using Weather API , which fetches data from API.", "When user types name of the City than it fetches Weather data for that city from API."],
-            url: "http://hp-api-app3.herokuapp.com/"
+            url: "http://hp-api-app3.herokuapp.com/",
+            git: "https://github.com/mrpethani/hp-API"
         },
         {
             id: "4",
@@ -33,7 +36,8 @@ const Works = () => {
             slogan: "Take a Note to Remember Your Work",
             domains: ["HTML", "CSS", "JavaScript", "BootStrap"],
             desc: ["This is a Simple Web application, in that User can add their Routine Tasks.", "Here User can also give Category for the Task based on it user can filter out the Tasks."],
-            url: "https://magic-notes.vercel.app/"
+            url: "https://magic-notes.vercel.app/",
+            git: "https://github.com/mrpethani/magic-notes"
         },
     ];
 
@@ -74,7 +78,7 @@ const Works = () => {
                                             <span>URL</span>
                                         </a>
                                         |
-                                        <a href={d.url} target="_blank" className="url">
+                                        <a href={d.git} target="_blank" className="url">
                                             <span>Github</span>
                                         </a>
                                     </div>
