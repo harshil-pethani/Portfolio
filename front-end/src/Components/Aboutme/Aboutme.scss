@@ -1,0 +1,134 @@
+@import "../../global.scss";
+
+.aboutme {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: calc(100vh - 70px);
+  position: relative;
+  padding: 0 150px;
+
+  @include mobile {
+    height: fit-content;
+    padding: 0 30px;
+  }
+
+  h1 {
+    font-size: 50px;
+    margin: 20px 0;
+    text-shadow: 10px 8px 7px rgba(68, 41, 41, 0.3);
+    padding: 0 20px;
+
+    @include mobile {
+      font-size: 25px;
+      // border: 2px solid red;
+      text-shadow: 5px 4px 4px rgba(68, 41, 41, 0.3);
+      margin: 0;
+      margin-bottom: 15px;
+    }
+  }
+
+  .desc {
+    // width: 70%;
+    font-size: 25px;
+    text-align: justify;
+
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+
+  h2 {
+    // border: 2px solid red;
+    align-self: flex-start;
+    margin: 20px 0;
+    font-size: 35px;
+
+    @include mobile {
+      font-size: 25px;
+      // border: 2px solid red;
+      text-shadow: 5px 4px 4px rgba(68, 41, 41, 0.3);
+      margin-bottom: 15px;
+    }
+  }
+
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // border: 2px solid red;
+    background: rgb(231, 181, 181);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    transition: all 0.3s ease;
+
+    @include mobile {
+      padding: 20px 10px;
+      // border: 2px solid red;
+    }
+
+    &:hover {
+      box-shadow: -1px -2px 30px 1px rgba(0, 0, 0, 0.76);
+      -webkit-box-shadow: -1px -2px 30px 1px rgba(0, 0, 0, 0.76);
+      -moz-box-shadow: -1px -2px 30px 1px rgba(0, 0, 0, 0.76);
+    }
+
+    .detail,
+    .subdetail {
+      //   border: 2px solid red;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin: 5px 0;
+
+      p {
+        font-size: 22px;
+
+        @include mobile {
+          font-size: 18px;
+          // border: 2px solid red;
+        }
+      }
+    }
+
+    .detail {
+      p {
+        font-weight: 700;
+      }
+    }
+  }
+
+  .button {
+    border: 2px solid $maincolor;
+    position: unset;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: 500;
+    color: $maincolor;
+    font-size: 22px;
+    transition: all 0.5s ease;
+    border-radius: 5px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+
+    @include mobile {
+      position: relative;
+      width: 100%;
+      margin: 30px 0;
+    }
+
+    &:hover {
+      background: $maincolor;
+      color: white;
+      letter-spacing: 3px;
+    }
+  }
+}

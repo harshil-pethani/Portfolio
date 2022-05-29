@@ -26,9 +26,6 @@ const Intro = () => {
                     <h1>Harshil Pethani</h1>
                     <h3>Freelance <span ref={textRef}></span>
                     </h3>
-                    <a href="#portfolio">
-                        <img src="assets/down.png" alt="" />
-                    </a>
                 </div>
             </div>
         </div>

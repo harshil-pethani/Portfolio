@@ -75,9 +75,6 @@ const Portfolio = () => {
                     ))
                 }
             </div>
-            <a href="#works">
-                <img src="assets/down.png" alt="" />
-            </a>
         </div>
     )
 }

@@ -2,11 +2,12 @@ import Topbar from "./Components/Topbar/Topbar";
 import Intro from "./Components/Intro/Intro";
 import Portfolio from "./Components/Portfolio/Portfolio";
 import Works from "./Components/Works/Works";
-import Testimonials from "./Components/Testimonials/Testimonials";
+import Tools from "./Components/Tools/Tools";
 import Contact from "./Components/Contact/Contact";
 import './App.scss';
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Menu from "./Components/Menu/Menu";
+import Aboutme from "./Components/Aboutme/Aboutme";
 
 const App = () => {
 
@@ -18,9 +19,10 @@ const App = () => {
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="sections">
         <Intro />
-        <Portfolio />
+        <Aboutme />
+        {/* <Portfolio /> */}
         <Works />
-        <Testimonials />
+        <Tools />
         <Contact />
       </div>
     </div>
