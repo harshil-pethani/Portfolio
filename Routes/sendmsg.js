@@ -17,7 +17,7 @@ const sendMail = (msg) => {
         from: 'harshil.s.pethani9957@gmail.com',
         to: 'harshilpethani8990@gmail.com',
         subject: 'Response From Portfolio Website',
-        text: `Username : ${msg.name} \n Mobile No. : ${msg.mobile} \n Email : ${msg.email} \n Message : ${msg.msg}`
+        text: `Username : ${msg.name} \nMobile No. : ${msg.mobile} \nEmail : ${msg.email} \nMessage : ${msg.msg}`
     };
 
     transporter.sendMail(mailOptions, function (error, info) {
