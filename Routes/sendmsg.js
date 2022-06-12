@@ -9,7 +9,7 @@ const sendMail = (msg) => {
         service: 'gmail',
         auth: {
             user: 'harshil.s.pethani9957@gmail.com',
-            pass: 'rwezrjhncczlrrpu'
+            pass: process.env.EMAILPASSWORD
         }
     });
 
@@ -17,7 +17,7 @@ const sendMail = (msg) => {
         from: 'harshil.s.pethani9957@gmail.com',
         to: 'harshilpethani8990@gmail.com',
         subject: 'Response From Portfolio Website',
-        text: `${msg}`
+        text: `Username : ${msg.name} \n Mobile No. : ${msg.mobile} \n Email : ${msg.email} \n Message : ${msg.msg}`
     };
 
     transporter.sendMail(mailOptions, function (error, info) {
