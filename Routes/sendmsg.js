@@ -30,8 +30,8 @@ const sendMail = (msg) => {
 }
 
 router.post('/', async (req, res) => {
-    sendMail(req.body);
     const msg = new User(req.body);
+    sendMail(msg);
     try {
         const savedMsg = await msg.save();
 
