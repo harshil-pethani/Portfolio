@@ -10,7 +10,7 @@
   height: fit-content;
   position: relative;
   padding: 0 150px;
-  padding-top: 50px;
+  padding-top: 0;
 
   @include mobile {
     overflow: hidden;
@@ -19,8 +19,8 @@
 
   h1 {
     font-size: 50px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     color: black;
     text-shadow: 10px 8px 7px rgba(0, 0, 0, 0.3);
     padding: 0 20px;

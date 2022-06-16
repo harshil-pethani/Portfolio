@@ -8,6 +8,7 @@
   height: calc(100vh - 70px);
   position: relative;
   padding: 0 150px;
+  padding-bottom: 30px;
 
   @include mobile {
     height: fit-content;

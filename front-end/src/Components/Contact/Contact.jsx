@@ -38,7 +38,7 @@ const Contact = () => {
             </div>
             <div className="right">
                 <h2>
-                    Contact Us
+                    Contact Me
                 </h2>
                 <form method="POST" onSubmit={handleSubmit}>
                     <input required type="text" placeholder="Name" value={nameValue} onChange={(e) => setNameValue(e.target.value)} />
