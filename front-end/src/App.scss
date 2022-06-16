@@ -1,21 +1,22 @@
-.App{
-    height: 100vh;
+.App {
+  height: 100vh;
 
-    .sections{
-        width: 100%;
-        height: calc(100vh - 70px);
-        // background-color: lightsalmon;
-        position: relative;
-        top: 70px;
-        // scroll-snap-type: y mandatory;
-        scrollbar-width: 0;
-        &::-webkit-scrollbar{
-            width: 0;
-        }
-
-        > *{
-            width: 100vw;
-            scroll-snap-align: start;
-        }
+  .sections {
+    width: 100%;
+    height: calc(100vh - 70px);
+    font-family: "Raleway", sans-serif;
+    // background-color: lightsalmon;
+    position: relative;
+    top: 70px;
+    // scroll-snap-type: y mandatory;
+    scrollbar-width: 0;
+    &::-webkit-scrollbar {
+      width: 0;
     }
+
+    > * {
+      width: 100vw;
+      scroll-snap-align: start;
+    }
+  }
 }
