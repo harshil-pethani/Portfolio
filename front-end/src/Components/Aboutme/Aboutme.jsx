@@ -19,7 +19,7 @@ const Aboutme = () => {
                         Birla Vishvakarma Mahavidyalaya
                     </p>
                     <p>
-                        9.33 CPI
+                        2019-23
                     </p>
                 </div>
                 <div className="subdetail">
@@ -27,7 +27,7 @@ const Aboutme = () => {
                         B.Tech , Information Technology
                     </p>
                     <p>
-                        2019-23
+                        9.33 CPI
                     </p>
                 </div>
             </div>
@@ -37,7 +37,7 @@ const Aboutme = () => {
                         Wisdom International School
                     </p>
                     <p>
-                        87%
+                        2017-19
                     </p>
                 </div>
                 <div className="subdetail">
@@ -45,7 +45,7 @@ const Aboutme = () => {
                         12th PCM
                     </p>
                     <p>
-                        2017-19
+                        87%
                     </p>
                 </div>
             </div>

@@ -53,7 +53,7 @@ const Contact = () => {
                     }
                 </form>
                 <div className="links">
-                    <a href="www.linkedin.com/in/harshil-pethani" className="linkItem">
+                    <a href="https://www.linkedin.com/in/harshil-pethani" className="linkItem">
                         <i className="fa-brands fa-linkedin-in"></i>
                     </a>
                     <a href="https://github.com/mrpethani" className="linkItem">

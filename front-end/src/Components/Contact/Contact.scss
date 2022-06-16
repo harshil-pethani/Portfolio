@@ -160,6 +160,11 @@
         align-items: center;
         text-decoration: none;
         background-color: crimson;
+        border: 2px solid crimson;
+
+        &:hover {
+          background-color: white;
+        }
 
         @include mobile {
           height: 30px;
