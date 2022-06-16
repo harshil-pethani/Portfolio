@@ -53,16 +53,16 @@ const Contact = () => {
                     }
                 </form>
                 <div className="links">
-                    <a href="https://www.linkedin.com/in/harshil-pethani" className="linkItem">
+                    <a target="_blank" href="https://www.linkedin.com/in/harshil-pethani" className="linkItem">
                         <i className="fa-brands fa-linkedin-in"></i>
                     </a>
-                    <a href="https://github.com/mrpethani" className="linkItem">
+                    <a target="_blank" href="https://github.com/mrpethani" className="linkItem">
                         <i className="fa-brands fa-github-alt"></i>
                     </a>
-                    <a href="https://www.facebook.com/harshil.pethani.73" className="linkItem">
+                    <a target="_blank" href="https://www.facebook.com/harshil.pethani.73" className="linkItem">
                         <i className="fa-brands fa-facebook-f"></i>
                     </a>
-                    <a href="https://www.instagram.com/_harshilpethani_/" className="linkItem">
+                    <a target="_blank" href="https://www.instagram.com/_harshilpethani_/" className="linkItem">
                         <i className="fa-brands fa-instagram"></i>
                     </a>
                 </div>
