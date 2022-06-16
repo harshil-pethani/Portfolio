@@ -161,9 +161,14 @@
         text-decoration: none;
         background-color: crimson;
         border: 2px solid crimson;
+        transition: all 500ms ease;
 
         &:hover {
           background-color: white;
+
+          i {
+            color: crimson;
+          }
         }
 
         @include mobile {
@@ -172,6 +177,7 @@
         }
 
         i {
+          transition: all 500ms ease;
           color: white;
         }
       }
