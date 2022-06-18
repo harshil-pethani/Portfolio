@@ -1,7 +1,7 @@
 import Topbar from "./Components/Topbar/Topbar";
 import Intro from "./Components/Intro/Intro";
 import Portfolio from "./Components/Portfolio/Portfolio";
-import Works from "./Components/Works/Works";
+import Projects from "./Components/Projects/Projects";
 import Tools from "./Components/Tools/Tools";
 import Contact from "./Components/Contact/Contact";
 import './App.scss';
@@ -20,8 +20,7 @@ const App = () => {
       <div className="sections">
         <Intro />
         <Aboutme />
-        {/* <Portfolio /> */}
-        <Works />
+        <Projects />
         <Tools />
         <Contact />
       </div>

@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import './Works.scss';
+import './projects.scss';
 
-const Works = () => {
+const Projects = () => {
     const data = [
         {
             id: "1",
@@ -23,26 +23,17 @@ const Works = () => {
         },
         {
             id: "3",
-            title: "Weather Application",
-            slogan: "Search City & Get Weather Info",
-            domains: ["HTML", "CSS", "JavaScript", "BootStrap"],
-            desc: ["It is a simple web-app using Weather API , which fetches data from API.", "When user types name of the City than it fetches Weather data for that city from API."],
-            url: "http://hp-api-app3.herokuapp.com/",
-            git: "https://github.com/mrpethani/hp-API"
-        },
-        {
-            id: "4",
-            title: "Notes Application",
-            slogan: "Take a Note to Remember Your Work",
-            domains: ["HTML", "CSS", "JavaScript", "BootStrap"],
-            desc: ["This is a Simple Web application, in that User can add their Routine Tasks.", "Here User can also give Category for the Task based on it user can filter out the Tasks."],
-            url: "https://magic-notes.vercel.app/",
-            git: "https://github.com/mrpethani/magic-notes"
+            title: "PhotoFlash",
+            slogan: "Search Image & Download the Image",
+            domains: ["React Js", "SASS", "JavaScript", "AOS"],
+            desc: ["It is a simple web-app using React Js, Here it fetches data from API.", "When user Select any Category or Type the Image name in the Search Box the Application will make a request to API.", "Based on Category This app will show you the result of Images.", "User can Download that Images to its local storage."],
+            url: "https://photo-flash.netlify.app/",
+            git: "https://github.com/mrpethani/PhotoFlash"
         },
     ];
 
     return (
-        <div id="works" className="works">
+        <div id="projects" className="projects">
             <h1>Projects</h1>
             <div className="slider">
                 {
@@ -75,7 +66,7 @@ const Works = () => {
                                     </ul>
                                     <div className="urls">
                                         <a href={d.url} target="_blank" className="url">
-                                            <span>URL</span>
+                                            <span>Live Site</span>
                                         </a>
                                         |
                                         <a href={d.git} target="_blank" className="url">
@@ -96,4 +87,4 @@ const Works = () => {
     )
 }
 
-export default Works
+export default Projects
