@@ -84,7 +84,9 @@ const Projects = () => {
                                 </div>
                             </motion.div>
                             <motion.div
-                                whileInView={{ scale: [0, 1] }}
+                                transition={{ duration: .5 }}
+                                initial={{ opacity: 0, y: 100 }}
+                                whileInView={{ opacity: 1, y: 0 }}
                                 className="rightContainer">
                                 <div className="images">
                                     {

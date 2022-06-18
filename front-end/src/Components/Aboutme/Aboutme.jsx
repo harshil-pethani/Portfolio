@@ -17,7 +17,11 @@ const Aboutme = () => {
             <h2>
                 Education
             </h2>
-            <div className="container">
+            <motion.div
+                transition={{ duration: .5 }}
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                className="container">
                 <div className="detail">
                     <p>
                         Birla Vishvakarma Mahavidyalaya
@@ -34,8 +38,12 @@ const Aboutme = () => {
                         9.33 CPI
                     </p>
                 </div>
-            </div>
-            <div className="container">
+            </motion.div>
+            <motion.div
+                transition={{ duration: .5 }}
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                className="container">
                 <div className="detail">
                     <p>
                         Wisdom International School
@@ -52,7 +60,7 @@ const Aboutme = () => {
                         87%
                     </p>
                 </div>
-            </div>
+            </motion.div>
             <a className="button" target="_blank" href="https://drive.google.com/file/d/1DCo1MXzXp45HFkEJ5yFqHWi1Bzwu-f68/view?usp=sharing">
                 My Resume
             </a>
