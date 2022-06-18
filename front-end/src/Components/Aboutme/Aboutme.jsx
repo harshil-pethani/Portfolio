@@ -1,15 +1,19 @@
 import { Link } from 'react-router-dom';
 import './Aboutme.scss';
+import { motion } from 'framer-motion/dist/framer-motion'
 
 const Aboutme = () => {
     return (
         <div id="aboutme" className="aboutme">
-            <h1>
+            <h1 >
                 About Me
             </h1>
-            <p className="desc">
+            <motion.p transition={{ duration: .5 }}
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                className="desc">
                 Currently I am pursuing B.Tech in the field of Information Technology from BVM , Anand. I have interest in web development , both front-end and back-end ,and I am also interested in competitive programming. I am always passionate to learn new tools and technologies.
-            </p>
+            </motion.p>
             <h2>
                 Education
             </h2>

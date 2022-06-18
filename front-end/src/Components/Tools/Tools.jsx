@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './Tools.scss';
+import { motion } from 'framer-motion/dist/framer-motion'
 
 const Tools = () => {
     const [domain, setDomain] = useState("frontend")
@@ -17,7 +18,11 @@ const Tools = () => {
                     <input checked={(domain === "tools") && true} type="radio" name="domain" value="tools" id="tools" onChange={(e) => setDomain(e.target.value)} />
                     <label htmlFor="tools">Tools</label>
                 </form>
-                <div className="itemContainer" style={domain === `frontend` ? { display: "flex" } : { display: "none" }}>
+                <motion.div
+                    transition={{ duration: .5 }}
+                    initial={{ opacity: 0, y: 100 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    className="itemContainer" style={domain === `frontend` ? { display: "flex" } : { display: "none" }}>
                     <div className="item">
                         <img src="assets/html.png" alt="" />
                         <p>
@@ -48,8 +53,12 @@ const Tools = () => {
                             REACT
                         </p>
                     </div>
-                </div>
-                <div className="itemContainer" style={domain === `backend` ? { display: "flex" } : { display: "none" }}>
+                </motion.div>
+                <motion.div
+                    transition={{ duration: .5 }}
+                    initial={{ opacity: 0, y: 100 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    className="itemContainer" style={domain === `backend` ? { display: "flex" } : { display: "none" }}>
                     <div className="item">
                         <img src="assets/node.png" alt="" />
                         <p>
@@ -80,8 +89,12 @@ const Tools = () => {
                             JWT
                         </p>
                     </div>
-                </div>
-                <div className="itemContainer" style={domain === `tools` ? { display: "flex" } : { display: "none" }}>
+                </motion.div>
+                <motion.div
+                    transition={{ duration: .5 }}
+                    initial={{ opacity: 0, y: 100 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    className="itemContainer" style={domain === `tools` ? { display: "flex" } : { display: "none" }}>
                     <div className="item">
                         <img src="assets/vscode.png" alt="" />
                         <p>
@@ -106,7 +119,7 @@ const Tools = () => {
                             NETLIFY
                         </p>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </div >
     )

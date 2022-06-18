@@ -11,6 +11,8 @@
   position: relative;
   padding: 0 150px;
   padding-top: 0;
+  width: 100vw;
+  // display: none;
 
   @include mobile {
     overflow: hidden;
@@ -21,11 +23,12 @@
     font-size: 50px;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: black;
+    color: $maincolor;
     text-shadow: 10px 8px 7px rgba(0, 0, 0, 0.3);
     padding: 0 20px;
-    // font-family: 'Dancing Script', cursive;
-
+    // padding-left: 10px;
+    // border-left: 10px solid $maincolor;
+    // border: 2px solid red;
     @include mobile {
       font-size: 25px;
       // border: 2px solid red;
@@ -35,80 +38,193 @@
     }
   }
 
-  .slider {
+  .projectContainer {
     height: fit-content;
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
     gap: 40px;
-    // border: 2px solid red;
-    padding: 30px;
+    padding: 30px 0;
     flex-direction: column;
 
+    @include mobile {
+      gap: 0;
+      padding: 10px 0;
+    }
+
     .container {
-      background: rgb(231, 181, 181);
-      // border: 2px solid red;
+      // background: rgb(231, 181, 181);
       border-radius: 10px;
-      padding: 30px;
+      padding: 20px 0;
       width: 100%;
+      display: flex;
+      justify-content: space-between;
       position: relative;
       transition: all 0.3s ease;
 
-      ul {
-        li {
-          line-height: 25px;
-          font-weight: 500;
-        }
-      }
-
       @include mobile {
-        padding-top: 50px;
+        flex-direction: column;
+        padding: 20px;
       }
 
-      &:hover {
-        box-shadow: -1px -2px 30px 1px rgba(0, 0, 0, 0.76);
-        -webkit-box-shadow: -1px -2px 30px 1px rgba(0, 0, 0, 0.76);
-        -moz-box-shadow: -1px -2px 30px 1px rgba(0, 0, 0, 0.76);
-      }
+      &.project1 {
+        flex-direction: row-reverse;
 
-      h2 {
-        font-size: 20px;
-      }
-      h4 {
-        font-size: 18px;
-        margin-bottom: 5px;
-      }
+        .rightContainer {
+          justify-content: flex-start;
 
-      .slogan {
-        color: rgb(67, 63, 63);
-        font-size: 16px;
-        font-weight: 500;
-        margin-top: 5px;
-      }
+          @include mobile {
+            justify-content: center;
+          }
+        }
 
-      .domains {
-        // border: 2px solid red;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        justify-content: flex-start;
-
-        .domain {
-          margin-right: 20px;
-          padding: 5px 10px;
-          background: white;
-          border-radius: 5px;
-          font-weight: 700;
+        @include mobile {
+          flex-direction: column;
+          // border: 2px solid red;
         }
       }
+
+      .leftContainer {
+        width: 50%;
+        // border: 2px solid red;
+        @include mobile {
+          width: 100%;
+        }
+        ul {
+          // border: 2px solid red;
+          list-style: none;
+          width: 90%;
+          li {
+            line-height: 25px;
+            text-align: justify;
+            font-weight: 500;
+          }
+        }
+
+        @include mobile {
+          padding-top: 0;
+        }
+
+        h2 {
+          font-size: 30px;
+          border-left: 8px solid rgb(231, 181, 181);
+          padding: 5px 0;
+          padding-left: 10px;
+          color: $maincolor;
+          // border: 2px solid red;
+          // margin-top: 0;
+
+          @include mobile {
+            font-size: 25px;
+          }
+        }
+        h4 {
+          font-size: 20px;
+          margin-bottom: 5px;
+          color: $maincolor;
+        }
+
+        .slogan {
+          color: rgb(67, 63, 63);
+          font-size: 16px;
+          font-weight: 500;
+          margin-top: 5px;
+        }
+
+        .domains {
+          // border: 2px solid red;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          justify-content: flex-start;
+
+          .domain {
+            margin-right: 20px;
+            padding: 5px 10px;
+            background: white;
+            color: $maincolor;
+            background: rgb(231, 181, 181);
+            border-radius: 5px;
+            font-weight: 500;
+          }
+        }
+      }
+
+      .rightContainer {
+        width: 600px;
+        height: 420px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        @include mobile {
+          width: 100%;
+          height: 350px;
+          justify-content: center;
+        }
+        // border: 2px solid green;
+        // background: white;
+
+        > .images {
+          height: 400px;
+          width: 90%;
+          // border: 2px solid green;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          overflow: auto;
+          scrollbar-width: 0;
+
+          @include mobile {
+            height: 300px;
+          }
+
+          &::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+            background-color: white;
+          }
+
+          &::-webkit-scrollbar {
+            height: 10px;
+            background-color: white;
+          }
+
+          &::-webkit-scrollbar-thumb {
+            background-color: rgb(231, 181, 181);
+            border: none;
+            border-radius: 10px;
+          }
+
+          // transform: translateX(-100px);
+
+          // &::-webkit-scrollbar {
+          //   width: 0;
+          // }
+
+          img {
+            height: auto;
+            width: 100%;
+            // width: 400px !important;
+            object-fit: cover;
+            // border: 2px solid red;
+          }
+        }
+        // }
+      }
+      // &:hover {
+      //   box-shadow: -1px -2px 30px 1px rgba(0, 0, 0, 0.76);
+      //   -webkit-box-shadow: -1px -2px 30px 1px rgba(0, 0, 0, 0.76);
+      //   -moz-box-shadow: -1px -2px 30px 1px rgba(0, 0, 0, 0.76);
+      // }
 
       .urls {
-        position: absolute;
-        top: 20px;
-        right: 20px;
+        // position: absolute;
+        // top: 20px;
+        // right: 20px;
+        margin-top: 20px;
         display: flex;
         justify-content: space-around;
         width: 150px;
@@ -116,7 +232,7 @@
         .url {
           text-decoration: none;
           color: $maincolor;
-          font-weight: 500;
+          font-weight: 700;
         }
       }
     }
@@ -144,6 +260,7 @@
       position: relative;
       width: 80%;
       margin: 30px 0;
+      font-size: 18px;
     }
 
     &:hover {

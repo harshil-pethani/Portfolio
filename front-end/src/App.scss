@@ -6,6 +6,7 @@
     height: calc(100vh - 70px);
     // background-color: lightsalmon;
     position: relative;
+    overflow-x: hidden;
     top: 70px;
     // scroll-snap-type: y mandatory;
     scrollbar-width: 0;
