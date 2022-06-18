@@ -48,12 +48,6 @@ const Tools = () => {
                             REACT
                         </p>
                     </div>
-                    <div className="item">
-                        <img src="assets/bootstrap.png" alt="" />
-                        <p>
-                            BOOTSTRAP
-                        </p>
-                    </div>
                 </div>
                 <div className="itemContainer" style={domain === `backend` ? { display: "flex" } : { display: "none" }}>
                     <div className="item">
@@ -84,12 +78,6 @@ const Tools = () => {
                         <img src="assets/jwt.png" alt="" />
                         <p>
                             JWT
-                        </p>
-                    </div>
-                    <div className="item">
-                        <img src="assets/fire.png" alt="" />
-                        <p>
-                            FIREBASE
                         </p>
                     </div>
                 </div>

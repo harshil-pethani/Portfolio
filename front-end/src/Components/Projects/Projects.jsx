@@ -26,7 +26,7 @@ const Projects = () => {
             title: "PhotoFlash",
             slogan: "Search Image & Download the Image",
             domains: ["React Js", "SASS", "JavaScript", "AOS"],
-            desc: ["It is a simple web-app using React Js, Here it fetches data from API.", "When user Select any Category or Type the Image name in the Search Box the Application will make a request to API.", "Based on Category This app will show you the result of Images.", "User can Download that Images to its local storage."],
+            desc: ["It is a simple web-app using React Js, Here it fetches data from API.", "When user Select any Category or Type the Image name in the Search Box the Application will make a request to API.", "Based on Category This app will show you the result of Images.", "User can also Download that Images to its local storage."],
             url: "https://photo-flash.netlify.app/",
             git: "https://github.com/mrpethani/PhotoFlash"
         },
