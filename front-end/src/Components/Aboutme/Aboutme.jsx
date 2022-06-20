@@ -61,7 +61,7 @@ const Aboutme = () => {
                     </p>
                 </div>
             </motion.div>
-            <a className="button" target="_blank" href="https://drive.google.com/file/d/1DCo1MXzXp45HFkEJ5yFqHWi1Bzwu-f68/view?usp=sharing">
+            <a className="button" target="_blank" href="https://drive.google.com/file/d/15Cz9rUYAcUX5inAOxcHZa6t5qzjbPdhe/view?usp=sharing">
                 My Resume
             </a>
         </div>
