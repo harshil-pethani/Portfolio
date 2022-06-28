@@ -60,7 +60,7 @@ const Tools = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     className="itemContainer" style={domain === `backend` ? { display: "flex" } : { display: "none" }}>
                     <div className="item">
-                        <img src="assets/node.png" alt="" />
+                        <img src="assets/nodejs.png" alt="" />
                         <p>
                             NODE JS
                         </p>
@@ -72,7 +72,7 @@ const Tools = () => {
                         </p>
                     </div>
                     <div className="item">
-                        <img src="assets/mongo.png" alt="" />
+                        <img src="assets/mongodb.png" alt="" />
                         <p>
                             MONGO DB
                         </p>
@@ -108,7 +108,7 @@ const Tools = () => {
                         </p>
                     </div>
                     <div className="item">
-                        <img src="assets/git.png" alt="" />
+                        <img src="assets/github.png" alt="" />
                         <p>
                             GITHUB
                         </p>
